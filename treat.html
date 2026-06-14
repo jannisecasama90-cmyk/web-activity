@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Treats | Cake Magazine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">SWEET TREATS</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#signature-cakes">Cakes</a></li>
+                <li><a href="#gourmet-cupcakes">Cupcakes</a></li>
+                <li><a href="#gourmet-cookies">Cookies</a></li>
+                <li><a href="#special-pastries">Pastries</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="issue-number">Issue No. 02 • Expanded Menu Edition</span>
+            <h1>The Art of Baking</h1>
+            <p>Explore our newest collection of delicious and aesthetic cakes, cupcakes, cookies, and pastries perfect for any special celebration.</p>
+            <a href="#magazine-section" class="btn-explore">View Full Menu</a>
+        </div>
+    </section>
+
+    <main id="magazine-section">
+        
+        <section id="signature-cakes" class="category-section">
+            <h2 class="section-title">Signature Cakes</h2>
+            <div class="grid-container">
+                
+                <div class="magazine-card">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=600&auto=format&fit=crop" alt="Classic Chocolate Fudge Cake" class="cake-img">
+                    </div>
+                    <div class="card-content">
+                        <span class="tag">Trending</span>
+                        <h3>Classic Chocolate Fudge</h3>
+                        <p>Rich, moist chocolate layers topped with premium dark chocolate ganache and chocolate curls.</p>
+                        <button class="price-btn" onclick="showPrice(this, '$25.00')">Check Price</button>
+                    </div>
+                </div>
+
+                <div class="magazine-card">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=600&auto=format&fit=crop" alt="Strawberry Dream Cake" class="cake-img">
+                    </div>
+                    <div class="card-content">
+                        <span class="tag">Best Seller</span>
+                        <h3>Strawberry Dream Cake</h3>
+                        <p>Light chiffon cake filled with fresh strawberries and whipped cream frosting.</p>
+                        <button class="price-btn" onclick="showPrice(this, '$30.00')">Check Price</button>
+                    </div>
+                </div>
+
+                <div class="magazine-card">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?q=80&w=600&auto=format&fit=crop" alt="Red Velvet Cream Cheese Cake" class="cake-img">
+                    </div>
+                    <div class="card-content">
+                        <span class="tag">Premium</span>
+                        <h3>Red Velvet Elegance</h3>
+                        <p>Deep red vanilla cake with a hint of cocoa, beautifully layered with signature cream cheese icing.</p>
+                        <button class="price-btn" onclick="showPrice(this, '$28.00')">Check Price</button>
+                    </div>
+                </div>
+
+                <div class="magazine-card">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?q=80&w=600&auto=format&fit=crop" alt="Mango Cream Cake" class="cake-img">
+                    </div>
+                    <div class="card-content">
+                        <span class="tag">Seasonal</span>
+                        <h3>Mango Royale Cake</h3>
+                        <p>Fresh, sweet mangoes layered between pillowy sponge cake and light whipped cream.</p>
+                        <button class="price-btn" onclick="showPrice(this, '$29.00')">Check Price</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="gourmet-cupcakes" class="category-section">
+            <h2 class="section-title">Gourmet Cupcakes</h2>
+            <div class="grid-container">
+                
+                <div class="magazine-card">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?q=80&w=600&auto=format&fit=crop" alt="Red Velvet Bliss Cupcakes" class="cake-img">
+                    </div>
+                    <div class="card-content">
+                        <span class="tag">Classic</span>
+                        <h3>Red Velvet Bliss</h3>
+                        <p>Classic velvet base topped with a smooth, rich, and tangy cream cheese frosting swirl.</p>
+                        <button class="price-btn" onclick="showPrice(this, '$12.00 / Box')">Check Price</button>
+                    </div>
+                </div>
+
+                <div class="magazine-card">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1519869325930-281384150729?q=80&w=600&auto=format&fit=crop" alt="Creamy Vanilla Berry Cupcakes" class="cake-img">
+                    </div>
+                    <div class="card-content">
+                        <span class="tag">Popular</span>
+                        <h3>Creamy Vanilla Bean</h3>
+                        <p>Fluffy vanilla bean cupcakes topped with sweet pastel frosting and fresh berries.</p>
+                        <button class="price-btn" onclick="showPrice(this, '$10.00 / Box')">Check Price</button>
+                    </div>
+                </div>
+
+                <div class="magazine-card">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1614707267537-b85acf00c4b8?q=80&w=600&auto=format&fit=crop" alt="Matcha Green Tea Cupcakes" class="cake-img">
+                    </div>
+                    <div class="card-content">
+                        <span class="tag">Unique</span>
+                        <h3>Matcha Green Tea</h3>
+                        <p>Premium Uji matcha infused cupcakes with a silky white chocolate matcha cream.</p>
+                        <button class="price-btn" onclick="showPrice(this, '$14.00 / Box')">Check Price</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="gourmet-cookies" class="category-section">
+            <h2 class="section-title">Gourmet Cookies</h2>
+            <div class="grid-container">
+                
+                <div class="magazine-card">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?q=80&w=600&auto=format&fit=crop" alt="Classic Chocolate Chip Cookies" class="cake-img">
+                    </div>
+                    <div class="card-content">
+                        <span class="tag">Top Rated</span>
+                        <h3>Classic Chocolate Chip</h3>
+                        <p>Soft-baked, chewy cookies loaded with premium semi-sweet chocolate chunks and a pinch of sea salt.</p>
+                        <button class="price-btn" onclick="showPrice(this, '$8.00 / Box')">Check Price</button>
+                    </div>
+                </div>
+
+                <div class="magazine-card">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1558961312-503cd1c30ff2?q=80&w=600&auto=format&fit=crop" alt="Double Chocolate Chunk Cookies" class="cake-img">
+                    </div>
+                    <div class="card-content">
+                        <span class="tag">Chocolate Fix</span>
+                        <h3>Double Chocolate Chunk</h3>
+                        <p>Fudgy dark chocolate dough packed tightly with flowing white and milk chocolate pieces.</p>
+                        <button class="price-btn" onclick="showPrice(this, '$9.50 / Box')">Check Price</button>
+                    </div>
+                </div>
+
+                <div class="magazine-card">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1600431521340-491eca880813?q=80&w=600&auto=format&fit=crop" alt="White Chocolate Macadamia Cookies" class="cake-img">
+                    </div>
+                    <div class="card-content">
+                        <span class="tag">Premium</span>
+                        <h3>White Choco Macadamia</h3>
+                        <p>Buttery cookies loaded with rich, sweet white chocolate chips and perfectly toasted macadamia nuts.</p>
+                        <button class="price-btn" onclick="showPrice(this, '$11.00 / Box')">Check Price</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="special-pastries" class="category-section">
+            <h2 class="section-title">Special Pastries</h2>
+            <div class="grid-container">
+                
+                <div class="magazine-card">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?q=80&w=600&auto=format&fit=crop" alt="Assorted French Macarons" class="cake-img">
+                    </div>
+                    <div class="card-content">
+                        <span class="tag">Gourmet</span>
+                        <h3>Parisian Macarons</h3>
+                        <p>Dainty, colorful French macarons with assorted premium fillings like ganache and buttercream.</p>
+                        <button class="price-btn" onclick="showPrice(this, '$18.00 / Box')">Check Price</button>
+                    </div>
+                </div>
+
+                <div class="magazine-card">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=600&auto=format&fit=crop" alt="Flaky Pain au Chocolat" class="cake-img">
+                    </div>
+                    <div class="card-content">
+                        <span class="tag">Freshly Baked</span>
+                        <h3>Pain au Chocolat</h3>
+                        <p>Buttery, multi-layered flaky French pastry filled with melted dark chocolate batons.</p>
+                        <button class="price-btn" onclick="showPrice(this, '$3.50 / piece')">Check Price</button>
+                    </div>
+                </div>
+
+                <div class="magazine-card">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?q=80&w=600&auto=format&fit=crop" alt="Glazed Fruit Tart" class="cake-img">
+                    </div>
+                    <div class="card-content">
+                        <span class="tag">Artisan</span>
+                        <h3>Glazed Fruit Tart</h3>
+                        <p>Sweet pastry crust filled with rich vanilla custard and beautifully arranged fresh fruits.</p>
+                        <button class="price-btn" onclick="showPrice(this, '$4.50 / piece')">Check Price</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sweet Treats Magazine. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showPrice(button, price) {
+            button.innerHTML = price;
+            button.style.backgroundColor = "#d4a373"; 
+            button.style.borderColor = "#d4a373";
+            button.style.color = "#fff";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdfbf7; 
+    color: #2b2b2b;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f1eae4;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #4a3b32;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 35px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #6e5d53;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #b5838d; 
+}
+
+.hero {
+    height: 75vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.45)), 
+                      url('https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=1200&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    margin: 15px 0 25px 0;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    max-width: 650px;
+    margin: 0 auto 35px auto;
+    font-weight: 300;
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+}
+
+.issue-number {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 20px;
+    border-radius: 30px;
+}
+
+.btn-explore {
+    display: inline-block;
+    padding: 14px 40px;
+    background-color: #ffffff;
+    color: #2b2b2b;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-explore:hover {
+    background-color: #b5838d;
+    color: #ffffff;
+}
+
+main {
+    padding: 80px 8%;
+}
+
+.category-section {
+    margin-bottom: 90px;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #4a3b32;
+    font-weight: 600;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #b5838d;
+    margin: 18px auto 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+.magazine-card {
+    background-color: #ffffff;
+    border: 1px solid #f3ece6;
+    overflow: hidden;
+    transition: transform 0.4s;
+}
+
+.magazine-card:hover {
+    transform: translateY(-8px);
+}
+
+.card-img-container {
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    background-color: #f7f7f7;
+}
+
+.cake-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.5s;
+}
+
+.magazine-card:hover .cake-img {
+    transform: scale(1.05); 
+}
+
+.card-content {
+    padding: 35px 30px;
+    text-align: center;
+}
+
+.tag {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: #b5838d;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.card-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.65rem;
+    color: #3a2e2b;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    color: #70625a;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    height: 70px; 
+    overflow: hidden;
+}
+
+.price-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: transparent;
+    border: 1px solid #3a2e2b;
+    color: #3a2e2b;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.price-btn:hover {
+    background-color: #3a2e2b;
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    padding: 45px;
+    background-color: #211c18;
+    color: #94857c;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
